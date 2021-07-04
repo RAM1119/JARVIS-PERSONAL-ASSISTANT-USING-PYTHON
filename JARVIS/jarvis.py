@@ -34,8 +34,8 @@ def sendmail(to,content):
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('ram1119games@gmail.com','9676028071')
-    server.sendmail('ram1119games@gmail.com',to,content)
+    server.login('yourmail','password')
+    server.sendmail('yourmail',to,content)
     server.close()
 
 if __name__=='__main__':
@@ -65,14 +65,14 @@ if __name__=='__main__':
             print("The Time is: "+str(strTime))
         
         elif 'open code' in query:
-            codepath="C:\\Users\\91818\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codepath="C:\\Users\\91818\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe" #choose your preferred path of your pc
             os.startfile(codepath)
         
-        elif 'email to sai ram' in query:
+        elif 'email to nameoftheperson to whom your sending' in query:
             try:
                 speak("what should i say")
                 content=aus()
-                to='sairamgunturu1119@gmail.com'
+                to='mail of the person you need to send'
                 sendmail(to,content)
                 speak("Email Sent!")
                 print("Email Sent!")
