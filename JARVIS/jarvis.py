@@ -54,7 +54,7 @@ if __name__=='__main__':
         elif 'open youtube' in query:
             webbrowser.open('youtube.com')
         elif 'play music' in query:
-            music_dir='E:\\songs'
+            music_dir='E:\\songs' #type your pc preferred path
             songs=os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir,songs[0]))
