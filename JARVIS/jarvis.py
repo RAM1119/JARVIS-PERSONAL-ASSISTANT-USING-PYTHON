@@ -16,8 +16,8 @@ def speak(audio):
     engine.runAndWait()
 
 def aus():
-    r=fuck.Recognizer()
-    with fuck.Microphone() as src:
+    r=ck.Recognizer()
+    with ck.Microphone() as src:
         print("Listening....")
         audio=r.listen(src)
         said=""
