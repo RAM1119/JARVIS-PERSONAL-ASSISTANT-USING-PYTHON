@@ -1,5 +1,5 @@
 from urllib.parse import quote
-import speech_recognition as fuck
+import speech_recognition as ck
 import wikipedia
 import pyttsx3
 import webbrowser
